@@ -15,6 +15,6 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: lelenaic/code-server-php82
-          username: ${{ github.user }}
+          username: ${{ github.actor }}
           password: ${{ secrets.GITHUB__TOKEN }}
           registry: ghcr.io
