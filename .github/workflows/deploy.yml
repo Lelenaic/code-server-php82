@@ -16,5 +16,5 @@ jobs:
         with:
           name: lelenaic/code-server-php82
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB__TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
