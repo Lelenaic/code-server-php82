@@ -1,7 +1,7 @@
 FROM codercom/code-server
 
 RUN sudo apt update && \
-  sudo apt install -y lsb-release apt-transport-https ca-certificates software-properties-common wget -y && \
+  sudo apt install -y lsb-release apt-transport-https ca-certificates software-properties-common wget zip unzip -y && \
   sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && \
   sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list' && \
   sudo apt update && \
